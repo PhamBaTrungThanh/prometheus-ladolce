@@ -7,10 +7,11 @@
 
     function get_data() 
     {
-        if (isset($_FILES['file'])) {
-            $file = $_FILES['file']['tmp_name'];
+        if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_FILES['file']) && $_FILES['file']['error'] == UPLOAD_ERR_OK && is_uploaded_file($_FILES['file']['tmp_name'])) {
+            $handle = fopen($_FILES['file']['tmp_name'], 'rb')
+            $filecontent = fread($handle, filesize($_FILES['file']['tmp_name']));
 
-            $xml = simplexml_load_file($file);
+            $xml = simplexml_load_string($filecontent );
             if ($xml === false) {
                 echo "Failed loading XML: ";
                 foreach(libxml_get_errors() as $error) {
