@@ -1,0 +1,15 @@
+{
+    "name": "phambatrungthanh/prometheus",
+    "description": "A simple XML to Excel converter using in Hotel Administrator Enviroment",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Cấn Lam Giang",
+            "email": "phambatrungthanh@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "phpoffice/phpspreadsheet": "dev-master"
+    }
+}
