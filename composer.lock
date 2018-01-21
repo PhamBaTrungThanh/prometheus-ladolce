@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "fbc4e8024fd0f61dbb62dfc6b71d4c76",
+    "content-hash": "9b15aaef4b7fb42d108ca3e4fdf1d6c0",
     "packages": [
         {
             "name": "phpoffice/phpspreadsheet",
@@ -141,13 +141,63 @@
                 "simple-cache"
             ],
             "time": "2017-10-23 01:57:42"
+        },
+        {
+            "name": "spatie/array-to-xml",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/array-to-xml.git",
+                "reference": "a6e1cf9dd8f6827573cb0336822004baa246f22b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/array-to-xml/zipball/a6e1cf9dd8f6827573cb0336822004baa246f22b",
+                "reference": "a6e1cf9dd8f6827573cb0336822004baa246f22b",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.0",
+                "phpunit/phpunit": "^6.3",
+                "spatie/phpunit-snapshot-assertions": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\ArrayToXml\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://murze.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Convert an array to xml",
+            "homepage": "https://github.com/spatie/array-to-xml",
+            "keywords": [
+                "array",
+                "convert",
+                "xml"
+            ],
+            "time": "2017-11-25 17:39:04"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "phpoffice/phpspreadsheet": 20
+        "phpoffice/phpspreadsheet": 20,
+        "spatie/array-to-xml": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
